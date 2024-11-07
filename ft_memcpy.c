@@ -19,15 +19,15 @@ void    *ft_memcpy(void *dst, const void *src, size_t n)
     }
     return(dst);
 }
-// #include <string.h>
-// int main()
-// {
-//     char src[] = "Hiiii!";
-//     char dst[50];
+#include <string.h>
+int main()
+{
+    char src[] = "Hiiii!";
+    char dst[50];
 
-//     ft_memcpy(dst, src, sizeof(src));
-//     memcpy(dst, src, sizeof(src));
-//     printf("Copied string: %s\n", dst);
-//     printf("Copied string in original: %s\n", dst);
-//     return 0;
-// }
+    ft_memcpy(src, src, sizeof(src));
+    memcpy(src, src, sizeof(src));
+    printf("Copied string: %s\n", dst);
+    printf("Copied string in original: %s\n", dst);
+    return 0;
+}

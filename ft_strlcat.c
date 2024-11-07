@@ -21,19 +21,19 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
     return (dst_len + src_len);
 }
-#include <stdio.h>
-#include "libft.h"
+// #include <stdio.h>
+// #include "libft.h"
 
-int main()
-{
-    char dst[20] = "Hello, ";
-    const char *src = "world!";
-    size_t dstsize = sizeof(dst);
+// int main()
+// {
+//     char dst[20] = "Hello, ";
+//     const char *src = "world!";
+//     size_t dstsize = sizeof(dst);
 
-    size_t result = ft_strlcat(dst, src, dstsize);
-    printf("dst: \"%s\"\n", dst);
-    printf("len: %zu\n", result);
+//     size_t result = ft_strlcat(dst, src, dstsize);
+//     printf("dst: \"%s\"\n", dst);
+//     printf("len: %zu\n", result);
 
-    return 0;
-}
+//     return 0;
+// }
 

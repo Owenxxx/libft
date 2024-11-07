@@ -7,7 +7,7 @@ void    *ft_memmove(void *dst, const void *src, size_t len)
 
     src_p = (unsigned char *)src;
     dst_p = (unsigned char *)dst;
-    if (dst == src || len == 0)
+    if (dst == src || len ==   0)
         return (dst);
     if (dst_p > src_p)
         while (len--)
@@ -16,18 +16,18 @@ void    *ft_memmove(void *dst, const void *src, size_t len)
         ft_memcpy(dst_p, src_p, len);
     return (dst);
 }
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main() {
-    char str1[20] = "Hello, World!";
-    char str2[20] = "Hello, World!";
+// int main() {
+//     char str1[20] = "Hello, World!";
+//     char str2[20] = "Hello, World!";
     
-    ft_memmove(str1 + 7, str1, 13);  // Overlapping
-    memmove(str2 + 7, str2, 13);      // Overlapping
+//     ft_memmove(str1, str1, 13);  // Overlapping
+//     memmove(str2, str2, 13);      // Overlapping
 
-    printf("Dyali: %s\n", str1);  // Expected output: "Hello, Hello, World!"
-    printf("Dyalhom: %s\n", str2);  // Expected output: "Hello, Hello, World!"
+//     printf("Dyali: %s\n", str1);
+//     printf("Dyalhom: %s\n", str2); 
 
-    return 0;
-}
+//     return 0;
+// }
