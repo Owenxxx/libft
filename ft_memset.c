@@ -11,9 +11,9 @@ void *ft_memset(void *b, int c, size_t len)
     }
     return b; 
 }
-#include <stdio.h>
-#include <string.h> 
-#include "libft.h"
+// #include <stdio.h>
+// #include <string.h> 
+// #include "libft.h"
 
 // int main() {
 //     char str1[50] = "yeah";
