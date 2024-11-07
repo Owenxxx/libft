@@ -21,3 +21,25 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
     return (dst_len + src_len);
 }
+#include <stdio.h>
+#include "libft.h"
+
+int main()
+{
+    char dst[20] = "Hello, ";
+    const char *src = "world!";
+    size_t dstsize = sizeof(dst);  // Define the size of destination buffer
+
+    printf("Before ft_strlcat:\n");
+    printf("dst: \"%s\"\n", dst);
+    printf("src: \"%s\"\n", src);
+
+    size_t result = ft_strlcat(dst, src, dstsize);
+
+    printf("\nAfter ft_strlcat:\n");
+    printf("dst: \"%s\"\n", dst);
+    printf("Length of resulting string: %zu\n", result);
+
+    return 0;
+}
+
