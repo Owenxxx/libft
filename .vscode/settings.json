@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "unistd.h": "c",
-        "__locale": "c"
+        "__locale": "c",
+        "stdio.h": "c"
     }
 }

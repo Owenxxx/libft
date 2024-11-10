@@ -19,18 +19,16 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
         }
         i++;
     }
-    
     return NULL;
 }
 // #include	<string.h>
-// #include	<xlocale.h>
 
 // int main() 
 // {
-//     const char *haystack;
-//     const char *needle;
-//     size_t len;
+//     // const char haystack[];
+//     // const char *needle;
+//     // size_t len;
 
-//         printf("my fct: %s\n", ft_strnstr("NULL", "ismail" ,-2));
-//        printf("the originale : %s\n", strnstr("sdhkn", "dkha", -2));
+//     printf("my fct: %s\n", ft_strnstr("hello","hello",10));
+//     printf("the originale :%s\n", ft_strnstr("hello","hello",10));
 // }

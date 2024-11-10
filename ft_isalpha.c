@@ -6,7 +6,7 @@
 /*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 06:30:58 by ojrhaide          #+#    #+#             */
-/*   Updated: 2024/10/30 22:58:04 by ojrhaide         ###   ########.fr       */
+/*   Updated: 2024/11/09 09:02:56 by ojrhaide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int ft_isalpha(int c)
     }
     return(0);
 }
-// #include <stdio.h>
-// int main()
-// {
-//     char a = 'z';
-//     printf("%d",ft_isalpha(a));
-// }
