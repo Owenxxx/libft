@@ -6,14 +6,13 @@
 /*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 06:49:21 by ojrhaide          #+#    #+#             */
-/*   Updated: 2024/11/10 05:32:22 by ojrhaide         ###   ########.fr       */
+/*   Updated: 2024/11/11 09:14:51 by ojrhaide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 #define LIBFT_H
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 
@@ -43,5 +42,8 @@ char *ft_strdup(const char *s1);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_strjoin(const char *s1, const char *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+void *ft_memchr(const void *s, int c, size_t n);
+void    ft_bzero(void *s, size_t n);
+int ft_memcmp(const void *s1, const void *s2, size_t n);
 
 #endif
