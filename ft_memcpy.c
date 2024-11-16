@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/15 16:20:50 by ojrhaide          #+#    #+#             */
+/*   Updated: 2024/11/15 16:20:51 by ojrhaide         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void    *ft_memcpy(void *dst, const void *src, size_t n)
@@ -9,6 +21,8 @@ void    *ft_memcpy(void *dst, const void *src, size_t n)
     {
         return NULL;
     }
+	// if(dst == src)
+	// 	return (dst);
         src_p = (unsigned char *)src;
         dst_p = (unsigned char *)dst;
     i = 0;
@@ -22,12 +36,11 @@ void    *ft_memcpy(void *dst, const void *src, size_t n)
 // #include <string.h>
 // int main()
 // {
-//     char src[] = "Hiiii!";
-//     char dst[50];
+//     char *src = ft_strdup("Hii");
 
-//     ft_memcpy(src, src, sizeof(src));
-//     memcpy(src, src, sizeof(src));
-//     printf("Copied string: %s\n", dst);
-//     printf("Copied string in original: %s\n", dst);
+//     ft_memcpy(src, src, 3);
+//     // memcpy(src, src,3);
+//     // printf("Copied string: %s\n", src);
+//     printf("Copied string in origina3: %s\n", src);
 //     return 0;
 // }

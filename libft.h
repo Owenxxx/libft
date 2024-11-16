@@ -6,7 +6,7 @@
 /*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 06:49:21 by ojrhaide          #+#    #+#             */
-/*   Updated: 2024/11/11 09:14:51 by ojrhaide         ###   ########.fr       */
+/*   Updated: 2024/11/15 15:34:12 by ojrhaide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include <stdlib.h>
 #include <unistd.h>
-
+#include <stdio.h>
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
@@ -26,8 +26,8 @@ char    *ft_strrchr(const char *s, int c);
 int     ft_strncmp(const char *s1, const char *s2, size_t n);
 char    *ft_strnstr(const char *haystack, const char *needle, size_t len);
 int     ft_tolower(int c);
-int     ft_toupper(int c);
-int ft_atoi(char *str);
+int		ft_toupper(int c);
+int		ft_atoi(const char *str);
 void    *ft_memset(void *b, int c, size_t len);
 size_t  ft_strlen(const char *s);
 void    *ft_memcpy(void *dst, const void *src, size_t n);
@@ -45,5 +45,9 @@ char	*ft_strtrim(char const *s1, char const *set);
 void *ft_memchr(const void *s, int c, size_t n);
 void    ft_bzero(void *s, size_t n);
 int ft_memcmp(const void *s1, const void *s2, size_t n);
+char	*ft_itoa(int n);
+void ft_putnbr_fd(int n, int fd);
+char	**ft_split(char const *s, char c);
+char *ft_strmapi(const char *s, char (*f)(unsigned int, char));
 
 #endif

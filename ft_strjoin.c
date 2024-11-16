@@ -1,6 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/15 16:21:42 by ojrhaide          #+#    #+#             */
+/*   Updated: 2024/11/15 16:22:34 by ojrhaide         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
-#include <stdlib.h>
-#include <string.h>
 
 char *ft_strjoin(const char *s1, const char *s2)
 {
@@ -18,8 +28,8 @@ char *ft_strjoin(const char *s1, const char *s2)
     if (!src)
         return (NULL);
 
-    memcpy(src, s1, len1);
-    memcpy(src + len1, s2, len2);
+    ft_memcpy(src, s1, len1);
+    ft_memcpy(src + len1, s2, len2);
     src[len1 + len2] = '\0';
 
     return (src);
@@ -30,5 +40,5 @@ char *ft_strjoin(const char *s1, const char *s2)
 
 // int main() 
 // {
-//     printf("mine: %s",ft_strjoin("NULL", "NULL"));
+//     printf("mine: %s",ft_strjoin(NULL, "ghe"));
 // }

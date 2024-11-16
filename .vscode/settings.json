@@ -1,7 +1,8 @@
 {
     "files.associations": {
-        "unistd.h": "c",
-        "__locale": "c",
-        "stdio.h": "c"
-    }
+		"unistd.h": "c",
+		"__locale": "c",
+		"stdio.h": "c",
+		"libft.h": "c"
+	}
 }

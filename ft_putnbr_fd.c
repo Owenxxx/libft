@@ -1,40 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/15 16:20:58 by ojrhaide          #+#    #+#             */
-/*   Updated: 2024/11/15 16:20:59 by ojrhaide         ###   ########.fr       */
+/*   Created: 2024/11/15 16:21:10 by ojrhaide          #+#    #+#             */
+/*   Updated: 2024/11/15 16:22:49 by ojrhaide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset(void *b, int c, size_t len)
+void ft_putnbr_fd(int n, int fd)
 {
-    unsigned char *o = (unsigned char *)b;
-
-    while (len--) 
+    long nbr;
+    if (fd <= 0)
+        return;
+    nbr = (long)n;
+    if (nbr < 0)
     {
-        *o = (unsigned char)c;
-        o++;                   
+        ft_putchar_fd('-', fd);
+        nbr *= -1;
     }
-    return b; 
-}
-// #include <stdio.h>
-// #include <string.h> 
+    if (nbr >= 10)
+        ft_putnbr_fd(nbr / 10, fd);
+    ft_putchar_fd((nbr % 10) + 48, fd);
+} 
 // #include "libft.h"
 
-// int main() {
-//     char str1[50] = "yeah";
+// int main(void)
+// {
+//     int number = -12723767545;
+//     int fd = 1;
 
-//     ft_memset(str1, '1', 5);
+//     ft_putnbr_fd(number, fd);
+//     ft_putchar_fd('\n', fd);
 
-//     memset(str1, '1', 5);
-
-//     printf("ft_memset: %s\n", str1);
-//     printf("memset: %s\n", str1);
 //     return 0;
 // }

@@ -6,12 +6,13 @@
 /*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 17:17:39 by ojrhaide          #+#    #+#             */
-/*   Updated: 2024/11/09 09:02:46 by ojrhaide         ###   ########.fr       */
+/*   Updated: 2024/11/15 16:25:32 by ojrhaide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_atoi(char *str)
+
+int	ft_atoi(const char *str)
 {
 	long	result = 0; 
 	int		sign = 1; 

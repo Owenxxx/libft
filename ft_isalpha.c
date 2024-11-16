@@ -6,9 +6,11 @@
 /*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 06:30:58 by ojrhaide          #+#    #+#             */
-/*   Updated: 2024/11/09 09:02:56 by ojrhaide         ###   ########.fr       */
+/*   Updated: 2024/11/15 16:23:41 by ojrhaide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_isalpha(int c)
 {
