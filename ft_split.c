@@ -6,7 +6,7 @@
 /*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 16:21:23 by ojrhaide          #+#    #+#             */
-/*   Updated: 2024/11/15 16:21:24 by ojrhaide         ###   ########.fr       */
+/*   Updated: 2024/11/16 20:48:51 by ojrhaide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,3 +58,16 @@ char	**ft_split(char const *s, char c)
 	str[i] = NULL;
 	return (str);
 }
+// int main(void)
+// {
+//     char str[] = "hello world test";
+//     char **tab = ft_split(str, '        ');
+//     int i = 0;
+
+//     while (tab[i])
+//     {
+//         printf("%s\n", tab[i]);
+//         i++;
+//     }
+//     return (0);
+// }
