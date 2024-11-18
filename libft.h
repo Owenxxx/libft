@@ -6,7 +6,7 @@
 /*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 06:49:21 by ojrhaide          #+#    #+#             */
-/*   Updated: 2024/11/15 15:34:12 by ojrhaide         ###   ########.fr       */
+/*   Updated: 2024/11/18 01:07:07 by ojrhaide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <unistd.h>
 #include <stdio.h>
 int		ft_isalnum(int c);
+int ft_isdigit(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
