@@ -6,7 +6,7 @@
 /*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 16:24:39 by ojrhaide          #+#    #+#             */
-/*   Updated: 2024/11/15 16:24:41 by ojrhaide         ###   ########.fr       */
+/*   Updated: 2024/11/20 15:47:42 by ojrhaide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (!s1 || !set)
 		return (NULL);
-	start = 0;
 	end = ft_strlen(s1);
+	start = 0;
 	while (s1[start] && ft_strchr(set, s1[start]))
 		start++;
 	while (end > start && ft_strchr(set, s1[end - 1]))
@@ -32,5 +32,5 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!trim_str)
 		return (NULL);
 	ft_strlcpy(trim_str, s1 + start, len + 1);
-	return (trim_str); 
+	return (trim_str);
 }

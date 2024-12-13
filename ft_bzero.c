@@ -6,13 +6,13 @@
 /*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 16:19:58 by ojrhaide          #+#    #+#             */
-/*   Updated: 2024/11/15 16:25:29 by ojrhaide         ###   ########.fr       */
+/*   Updated: 2024/11/19 17:15:31 by ojrhaide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    ft_memset(s,'\0', n);
+	ft_memset(s, '\0', n);
 }

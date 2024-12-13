@@ -14,15 +14,13 @@ LIBC = ar rc
 CC = cc
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
-
-%.o : %.c libft.h
-	${CC} ${CFLAGS} -c $< -o $@
+all: ${NAME}
 
 ${NAME}: ${OBJS}
 	${LIBC} ${NAME} ${OBJS}
 
-all: ${NAME}
-
+%.o : %.c libft.h
+	${CC} ${CFLAGS} -c $< -o $@
 
 clean:
 	${RM} ${OBJS}
@@ -32,3 +30,4 @@ fclean: clean
 
 re: fclean all
 
+.PHONY: clean

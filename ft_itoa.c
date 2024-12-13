@@ -6,7 +6,7 @@
 /*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 16:20:28 by ojrhaide          #+#    #+#             */
-/*   Updated: 2024/11/15 16:20:29 by ojrhaide         ###   ########.fr       */
+/*   Updated: 2024/11/21 18:53:04 by ojrhaide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,9 @@ char	*ft_itoa(int n)
 
 static void	cnv_helper(char *temp, long nbr)
 {
-	int i = 0;
+	int	i;
 
+	i = 0;
 	while (nbr > 0)
 	{
 		temp[i++] = (nbr % 10) + '0';

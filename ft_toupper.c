@@ -6,17 +6,17 @@
 /*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 16:24:23 by ojrhaide          #+#    #+#             */
-/*   Updated: 2024/11/15 16:24:24 by ojrhaide         ###   ########.fr       */
+/*   Updated: 2024/11/20 16:07:39 by ojrhaide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if(c >= 'a' && c <= 'z')
-    {
-        return (c - 32);
-    }
-    return (c);
+	if (c >= 'a' && c <= 'z')
+	{
+		return (c - 32);
+	}
+	return (c);
 }

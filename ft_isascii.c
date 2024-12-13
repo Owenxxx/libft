@@ -6,17 +6,17 @@
 /*   By: ojrhaide <ojrhaide@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 16:20:16 by ojrhaide          #+#    #+#             */
-/*   Updated: 2024/11/15 16:23:37 by ojrhaide         ###   ########.fr       */
+/*   Updated: 2024/11/19 18:03:54 by ojrhaide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-    if(c <= 127 && c >= 0)
-    {
-        return(1);
-    }
-    return(0);
+	if (c >= 0 && c <= 127)
+	{
+		return (1);
+	}
+	return (0);
 }
